@@ -1,59 +1,41 @@
-## Introduction
+JavaScript provides a Date function using the syntax `new Date()`.
 
-Add project description here. What will learners be making? Broadly what skills will they be learning?
+This function lets you work with dates automatically. JavaScript will use the browser's time zone and return the current date and time. For example:
 
-### What you will make
+`Mon Feb 19 2024 16:15:20 GMT+0000 (Greenwich Mean Time)`
 
---- no-print ---
-Add instructions for interacting with the embedded content here.
++ Creating a Date Object: creates a new Date representing the current date and time:
 
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
-
---- print-only ---
-![Complete project](images/showcase_static.png)
---- /print-only ---
-
---- collapse ---
+--- code ---
 ---
-title: What you will need
+language: js
+filename: script.js
+line_numbers: true
+line_number_start: 1
+line_highlights: 2
 ---
-### Hardware
+     
+     // Update Copyright Year function 
+     const currentYear = new Date();
+    
+--- /code ---
 
-+ A computer or tablet capable of running Scratch 3
++ Setting a Specific Date - creates a Date object for the specified date (year, month, day).
+    const specificDate = new Date("2022-01-09");
 
-### Software
++ Getting Various Components - these functions retrieve specific components of the date and time:
 
-+ Scratch 3 (either [online](https://scratch.mit.edu/){:target="_blank"} or [offline](https://scratch.mit.edu/download){:target="_blank"})
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth(); // 0-indexed (0 = January, 11 = December)
+    const day = currentDate.getDate();
+    const hours = currentDate.getHours();
+    const minutes = currentDate.getMinutes();
+    const seconds = currentDate.getSeconds();
+    const milliseconds = currentDate.getMilliseconds();
 
-### Downloads
++ Setting Date Components - these functions allow you to set specific components of the date:
 
-+ Download the project [starter file](https://rpf.io/p/en/projectName-go){:target="_blank"} if working offline
+    currentDate.setFullYear(2023);
+    currentDate.setMonth(5); // 0-indexed (5 = June)
+    currentDate.setDate(15);
 
---- /collapse ---
-
---- collapse ---
----
-title: What you will learn
----
-
-+ Learning objective 1
-+ Learning objective 2
-+ Learning objective 3
-
---- /collapse ---
-
---- collapse ---
----
-title: Additional information for educators
----
-
-You can download the completed project [here](https://rpf.io/p/en/projectName-get){:target="_blank"}.
-
-If you need to print this project, please use the [printer-friendly version](https://projects.raspberrypi.org/en/projects/projectName/print){:target="_blank"}.
-
---- /collapse ---
