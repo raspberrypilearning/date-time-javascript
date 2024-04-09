@@ -20,9 +20,7 @@ This example creates a new Date object representing the current date and time. I
 ---
 language: js
 filename: 
-line_numbers: 
-line_number_start: 1
-line_highlights: 2
+line_numbers: false
 ---
      
     // Update Copyright Year function 
