@@ -1,29 +1,47 @@
-JavaScript provides a Date function using the syntax `new Date()`.
+JavaScript has a `Date()` function that returns the current date and time, using the browser's time zone.
 
-This function lets you work with dates automatically. JavaScript will use the browser's time zone and return the current date and time. For example:
+For example:
 
 `Mon Feb 19 2024 16:15:20 GMT+0000 (Greenwich Mean Time)`
 
-+ Creating a Date Object: creates a new Date representing the current date and time:
+A call to `Date()` returns a string.
+
+Here is the result of the call to `Date()` when this page was loaded:
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/comic-character-date" width="100%" height="100" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
+
+
+
+### Creating a Date object 
+
+This example creates a new Date object representing the current date and time. It is held in the constant `currentDate`.
 
 --- code ---
 ---
 language: js
-filename: script.js
-line_numbers: true
+filename: 
+line_numbers: 
 line_number_start: 1
 line_highlights: 2
 ---
      
-     // Update Copyright Year function 
-     const currentYear = new Date();
+    // Update Copyright Year function 
+    const currentDate = new Date();
     
 --- /code ---
 
-+ Setting a Specific Date - creates a Date object for the specified date (year, month, day).
-    const specificDate = new Date("2022-01-09");
+### Get date components
 
-+ Getting Various Components - these functions retrieve specific components of the date and time:
+These functions retrieve specific components of the date and time:
+
+--- code ---
+---
+language: js
+filename: 
+line_numbers: 
+line_number_start: 
+line_highlights: 
+---
 
     const year = currentDate.getFullYear();
     const month = currentDate.getMonth(); // 0-indexed (0 = January, 11 = December)
@@ -33,9 +51,4 @@ line_highlights: 2
     const seconds = currentDate.getSeconds();
     const milliseconds = currentDate.getMilliseconds();
 
-+ Setting Date Components - these functions allow you to set specific components of the date:
-
-    currentDate.setFullYear(2023);
-    currentDate.setMonth(5); // 0-indexed (5 = June)
-    currentDate.setDate(15);
-
+--- /code ---
