@@ -14,7 +14,7 @@ Here is the result of the call to `Date()` when this page was loaded:
 
 ### Creating a Date object 
 
-This example creates a new Date object representing the current date and time. It is held in the constant `currentDate`.
+This example creates a new Date object, representing the current date and time. It is held in the constant `currentDate`.
 
 --- code ---
 ---
