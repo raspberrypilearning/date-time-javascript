@@ -1,18 +1,18 @@
-JavaScript has a `Date()` function that returns the current date and time, using the browser's time zone.
+JavaScript heeft een 'Date()' functie die de huidige datum en tijd weergeeft, met behulp van de tijdzone van de browser.
 
-For example:
+Bijvoorbeeld:
 
-`Mon Feb 19 2024 16:15:20 GMT+0000 (Greenwich Mean Time)`
+`maandag 19 feb 2024 16:15:20 GMT+0000 (Greenwich Mean Time)`
 
-A call to `Date()` returns a string.
+Een aanroep van `Date()` retourneert een string.
 
-Here is the result of the call to `Date()` when this page was loaded:
+Dit is het resultaat van de aanroep van `Date()` toen deze pagina werd geladen:
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/comic-character-date" width="100%" height="100" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
-### Creating a Date object
+### Een datum-object maken
 
-This example creates a new Date object representing the current date and time. It is held in the constant `currentDate`.
+Dit voorbeeld maakt een nieuw datumobject aan dat de huidige datum en tijd weergeeft. Dit wordt opgeslagen in de constante `currentDate`.
 
 ## --- code ---
 
@@ -22,15 +22,15 @@ line_numbers: false
 --------------------------------------------------------
 
 ```
-// Update Copyright Year function 
-const currentDate = new Date();
+// Update Copyright Jaar functie 
+ const currentDate = new Date();
 ```
 
 \--- /code ---
 
-### Get date components
+### Datumcomponenten ophalen
 
-These functions retrieve specific components of the date and time:
+Deze functies halen specifieke onderdelen van de datum en tijd op:
 
 ## --- code ---
 
@@ -43,7 +43,7 @@ line_highlights:
 
 ```
 const year = currentDate.getFullYear();
-const month = currentDate.getMonth(); // 0-indexed (0 = January, 11 = December)
+const month = currentDate.getMonth(); // 0-indexed (0 = Januari, 11 = December)
 const day = currentDate.getDate();
 const hours = currentDate.getHours();
 const minutes = currentDate.getMinutes();
