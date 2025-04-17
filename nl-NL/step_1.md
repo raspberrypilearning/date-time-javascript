@@ -12,7 +12,7 @@ Dit is het resultaat van de aanroep van `Date()` toen deze pagina werd geladen:
 
 ### Een datum-object maken
 
-Dit voorbeeld maakt een nieuw datumobject aan dat de huidige datum en tijd weergeeft. Dit wordt opgeslagen in de constante `currentDate`.
+This example creates a new Date object, representing the current date and time. Dit wordt opgeslagen in de constante `currentDate`.
 
 ## --- code ---
 
