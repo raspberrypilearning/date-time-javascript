@@ -12,7 +12,7 @@ Voici le résultat de l'appel à `Date()` lorsque cette page a été chargée :
 
 ### Créer un objet Date
 
-Cet exemple crée un nouvel objet Date représentant la date et l'heure actuelles. Il est contenu dans la constante `currentDate`.
+This example creates a new Date object, representing the current date and time. Il est contenu dans la constante `currentDate`.
 
 ## --- code ---
 
